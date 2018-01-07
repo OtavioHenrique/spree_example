@@ -22,16 +22,17 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'spree', '~> 3.1.0'
+gem 'spree_auth_devise', '~> 3.1.0'
+gem 'spree_gateway', '~> 3.1.0'
+gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '3-1-stable'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Unicorn as the app server
 # gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'spree_tuatun_theme', :git => 'git://github.com/sammyd/spree_tuatun_theme.git'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
